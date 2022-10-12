@@ -1,26 +1,36 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <h1> HTML Is Fun</h1>
+  <p> Just kidding, it's not really enjoyable at all. 
+    But I'm making myself write in Vue anyways for learning.</p>
+  <p> For now, I plan on just using raw HTML and CSS. 
+    I will easily have the option to mess with javascript 
+    whenever I want to, since it's right there.</p>
+    <input type="text" v-model="egg" >
+    <p>{{egg}}</p>
 </template>
-
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
 export default {
-  name: 'App',
   components: {
-    HelloWorld
+  },
+  props: [
+  ],
+  data () {
+    return {
+      egg:''
+    }
+  },
+  mounted () {
+  },
+  created () {
+  },
+  computed: {
+  },
+  methods: {
+  },
+  watch: {
   }
 }
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
 </style>
